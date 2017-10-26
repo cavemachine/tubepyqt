@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainUI</class>
+ <widget class="QMainWindow" name="mainUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>522</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>tubeqt</string>
+  </property>
+  <widget class="QWidget" name="widgetCentral">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>521</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="layoutMain">
+     <item row="2" column="0">
+      <widget class="QTabWidget" name="widgetTab">
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="tubeTab">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <attribute name="title">
+         <string>youtube-dl</string>
+        </attribute>
+        <widget class="QWidget" name="gridLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>521</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="tubeLayout">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="buttonSaveList">
+            <property name="text">
+             <string>Save list</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="buttonAdd">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="buttonDeleteAll">
+            <property name="text">
+             <string>Delete All</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="buttonDelete">
+            <property name="text">
+             <string>Delete</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="buttonLoadList">
+            <property name="text">
+             <string>Load list</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="4">
+           <widget class="QListWidget" name="listURL"/>
+          </item>
+          <item row="4" column="0" colspan="4">
+           <widget class="QLineEdit" name="linePreset"/>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLineEdit" name="lineURL"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QComboBox" name="comboPreset">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>300</y>
+           <width>191</width>
+           <height>25</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="buttonDownload">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>300</y>
+           <width>140</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Download</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="buttonStop">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>350</y>
+           <width>140</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="ffmpegTab">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <attribute name="title">
+         <string>ffmpeg</string>
+        </attribute>
+        <widget class="QWidget" name="gridLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>30</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="ffmpegLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="ffmpegLabel">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>522</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
